@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>三体 AI 内容工作室 · 三人精简编制 · 协作看板</title>
+<style>
+:root{--bg:#11131a;--panel:#1a1d27;--panel2:#202432;--line:#2c3142;--fg:#d5dae8;--dim:#8b93a8;--accent:#7aa2f7}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:32px 24px 80px}
+h1{font-size:26px;margin:0 0 6px}h2{font-size:17px;margin:36px 0 14px;padding-left:10px;border-left:3px solid var(--accent)}
+.sub{color:var(--dim);font-size:13px}
+.stats{display:flex;gap:12px;flex-wrap:wrap;margin:22px 0 8px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 18px;min-width:112px}
+.stat b{display:block;font-size:22px;color:var(--accent)}.stat span{font-size:12px;color:var(--dim)}
+.members{display:grid;grid-template-columns:repeat(auto-fill,minmax(144px,1fr));gap:10px}
+.member{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px;text-align:center}
+.avatar{width:38px;height:38px;line-height:36px;margin:0 auto 8px;border:2px solid;border-radius:50%;font-size:17px;font-weight:700}
+.mname{font-weight:700}.mrole{font-size:12px;color:var(--fg);margin-top:2px}.mtools{font-size:11px;color:var(--dim);margin-top:6px}
+.grid{display:grid;grid-template-columns:1.55fr 1fr;gap:18px}@media(max-width:900px){.grid{grid-template-columns:1fr}}
+.msg{background:var(--panel);border:1px solid var(--line);border-left:2px solid #39405a;border-radius:8px;padding:11px 14px;margin-bottom:9px}
+.mhead{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:12px}
+.badge{border:1px solid;border-radius:4px;padding:0 7px;font-size:11px}
+.arrow,.ts{color:var(--dim)}.ts{margin-left:auto;font-variant-numeric:tabular-nums}.to{color:var(--dim)}
+.subject{font-weight:600;margin-top:6px;font-size:13px}
+.body{white-space:pre-wrap;word-break:break-word;margin:6px 0 0;font:12px/1.65 inherit;color:#b9c0d4;max-height:190px;overflow:auto}
+.att a{color:var(--accent);font-size:11px;margin-right:8px;text-decoration:none}
+.task{display:flex;align-items:center;gap:8px;background:var(--panel);border:1px solid var(--line);border-radius:7px;padding:8px 10px;margin-bottom:7px;font-size:12px}
+.st{border-radius:4px;padding:1px 7px;font-size:11px;background:#2b3040;color:#a9b1c6;white-space:nowrap}
+.st-done{background:#1d3a2a;color:#9ece6a}.st-in_progress{background:#22304a;color:#7aa2f7}.st-review{background:#3a3220;color:#e0af68}
+.tt{flex:1}.owner{color:var(--dim)}
+.box{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 18px;max-height:640px;overflow:auto}
+a{color:var(--accent)}li{margin:4px 0;font-size:12px}
+footer{margin-top:40px;color:var(--dim);font-size:11px;text-align:center}
+</style></head><body><div class="wrap">
+<h1>三体 AI 内容工作室 · 三人精简编制 · 内部协作看板</h1>
+<div class="sub">大脑 Mock (离线演示)　|　运行目录 demo-trio　|　全部沟通真实落盘于 messages.jsonl</div>
+<div class="stats">
+<div class="stat"><b>35</b><span>内部消息</span></div>
+<div class="stat"><b>11</b><span>任务卡</span></div>
+<div class="stat"><b>3</b><span>交付物</span></div>
+<div class="stat"><b>2</b><span>会议决议</span></div>
+<div class="stat"><b>3</b><span>在岗员工</span></div>
+</div>
+<h2>在岗花名册</h2><div class="members"><div class="member"><div class="avatar" style="border-color:#7dcfff;color:#7dcfff">智</div><div class="mname">智子</div><div class="mrole">选题与事实把关</div><div class="mtools">score_topic · scan_frontier · cross_check · source_ledger</div></div><div class="member"><div class="avatar" style="border-color:#9ece6a;color:#9ece6a">云</div><div class="mname">云天明</div><div class="mrole">主笔与成片执行</div><div class="mtools">write_script · storyboard · cut_list · compliance_check</div></div><div class="member"><div class="avatar" style="border-color:#ff9e64;color:#ff9e64">维</div><div class="mname">维德</div><div class="mrole">总负责人 / 终审与商务</div><div class="mtools">arbitrate · budget_ledger · decision_memo · partner_outreach</div></div></div>
+<div class="grid">
+<div><h2>内部沟通时间线</h2><div class="box"><div class="msg"><div class="mhead"><span class="badge" style="background:#7aa2f71f;color:#7aa2f7;border-color:#7aa2f766">派单</span><b>维德</b><span class="arrow">→</span><span class="to">全员</span><span class="ts">20:35:46</span></div><div class="subject">项目启动：做一期 90 秒短视频：AI 智能体从工具变成同事，讲清楚多智能体协作怎么落地</div><pre class="body">全线注意。本次目标：做一期 90 秒短视频：AI 智能体从工具变成同事，讲清楚多智能体协作怎么落地
+规则不变：上一棒做完自己交接，谁发现问题谁拉会，决议必须落板。前进。</pre></div><div class="msg"><div class="mhead"><span class="badge" style="background:#7aa2f71f;color:#7aa2f7;border-color:#7aa2f766">派单</span><b>维德</b><span class="arrow">→</span><span class="to">智子</span><span class="ts">20:35:46</span></div><div class="subject">派单：选题与事实把关</div><pre class="body">智子，第一棒给你。按你的准则筛，不达标的直接驳回，不用顾及进度。</pre></div><div class="msg"><div class="mhead"><span class="badge" style="background:#7dcfff1f;color:#7dcfff;border-color:#7dcfff66">沟通</span><b>智子</b><span class="arrow">→</span><span class="to">维德、维德</span><span class="ts">20:35:46</span></div><div class="subject">回执：选题与事实把关已接棒</div><pre class="body">收到 2 条交接（来自维德），任务卡 task-fd3d788d 已置为进行中。我按自己的准则复核后再往下递，有问题会直接找你。</pre></div><div class="msg"><div class="mhead"><span class="badge" style="background:#9ece6a1f;color:#9ece6a;border-color:#9ece6a66">交接</span><b>智子</b><span class="arrow">→</span><span class="to">云天明</span><span class="ts">20:35:46</span></div><div class="subject">交接：选题评估单 → 请接棒</div><pre class="body">云天明，任务卡 task-fd3d788d 已完成复核。
+交付物：artifacts/01_zhizi.md
+要点：选题评估单 · 智子
+有异议直接回我，别往下硬传。</pre><div class="att"><a href="artifacts/01_zhizi.md">01_zhizi.md</a></div></div><div class="msg"><div class="mhead"><span class="badge" style="background:#e0af681f;color:#e0af68;border-color:#e0af6866">汇报</span><b>智子</b><span class="arrow">→</span><span class="to">维德</span><span class="ts">20:35:46</span></div><div class="subject">进度：选题与事实把关已交付</div><pre class="body">选题评估单 已挂到看板 task-fd3d788d，状态 review。</pre><div class="att"><a href="artifacts/01_zhizi.md">01_zhizi.md</a></div></div><div class="msg"><div class="mhead"><span class="badge" style="background:#e0af681f;color:#e0af68;border-color:#e0af6866">汇报</span><b>智子</b><span class="arrow">→</span><span class="to">维德</span><span class="ts">20:35:46</span></div><div class="subject">进度预警：选题与事实把关已过自检</div><pre class="body">维德，这一棒自检完毕：素材缺口和引用风险都列进交付物了，云天明 可以直接接手。节点若被挤压，按流程我现在就拉会，不拖到终审。</pre></div><div class="msg"><div class="mhead"><span class="badge" style="background:#bb9af71f;color:#bb9af7;border-color:#bb9af766">拉会</span><b>智子</b><span class="arrow">→</span><span class="to">全员</span><span class="ts">20:35:46</span></div><div class="subject">临时会议：口径对齐：事实边界与交付标准</div><pre class="body">发起人：智子。原因：智子 交付后提出：第一棒的事实口径与下游可执行标准需要当场收敛。
+参会：智子、云天明、维德（主持）。
+形式：2 轮发言 + 表态 + 现场出决议。</pre></div><div class="msg"><div class="mhead"><span class="badge" style="background:#7dcfff1f;color:#7dcfff;border-color:#7dcfff66">沟通</span><b>维德</b><span class="arrow">→</span><span class="to">全员</span><span class="ts">20:35:46</span></div><div class="subject">[会议] 开场 · 维德</div><pre class="body">【维德】立项放行，边界锁死。谁引用谁负责，散会。 （议题：口径对齐：事实边界与交付标准，仅代表本岗位立场。）</pre></div><div class="msg"><div class="mhead"><span class="badge" style="background:#7dcfff1f;color:#7dcfff;border-color:#7dcfff66">沟通</span><b>智子</b><span class="arrow">→</span><span class="to">全员</span><span class="ts">20:35:46</span></div><div class="subject">[会议] 第1轮 · 智子</div><pre class="body">【智子】把标题收窄到一个可验证的动作，三维评分里独家性才立得住。 （议题：口径对齐：事实边界与交付标准（第 1 轮），仅代表本岗位立场。）</pre></div><div class="msg"><div class="mhead"><span class="badge" style="background:#7dcfff1f;color:#7dcfff;border-color:#7dcfff66">沟通</span><b>云天明</b><span class="arrow">→</span><span class="to">全员</span><span class="ts">20:35:46</span></div><div class="subject">[会议] 第1轮 · 云天明</div><pre class="body">【云天明】一个稿子只讲一件事，我按收窄后的口径重写钩子。 （议题：口径对齐：事实边界与交付标准（第 1 轮），仅代表本岗位立场。）</pre></div><div class="msg"><div class="mhead"><span class="badge" style="background:#565f891f;color:#565f89;border-color:#565f8966">系统</span><b>维德</b><span class="arrow">→</span><span class="to">全员</span><span class="ts">20:35:46</span></div><div class="subject">第 1 轮结束</div><pre class="body">立场已收齐，进入下一轮；有交叉问题请直接点名同事，不要绕主持人。</pre></div><div class="msg"><div class="mhead"><span class="badge" style="background:#7dcfff1f;color:#7dcfff;border-color:#7dcfff66">沟通</span><b>智子</b><span class="arrow">→</span><span class="to">全员</span><span class="ts">20:35:46</span></div><div class="subject">[会议] 第2轮 · 智子</div><pre class="body">【智子】把标题收窄到一个可验证的动作，三维评分里独家性才立得住。 （议题：口径对齐：事实边界与交付标准（第 2 轮），仅代表本岗位立场。）</pre></div><div class="msg"><div class="mhead"><span class="badge" style="background:#7dcfff1f;color:#7dcfff;border-color:#7dcfff66">沟通</span><b>云天明</b><span class="arrow">→</span><span class="to">全员</span><span class="ts">20:35:46</span></div><div class="subject">[会议] 第2轮 · 云天明</div><pre class="body">【云天明】一个稿子只讲一件事，我按收窄后的口径重写钩子。 （议题：口径对齐：事实边界与交付标准（第 2 轮），仅代表本岗位立场。）</pre></div><div class="msg"><div class="mhead"><span class="badge" style="background:#565f891f;color:#565f89;border-color:#565f8966">系统</span><b>维德</b><span class="arrow">→</span><span class="to">全员</span><span class="ts">20:35:46</span></div><div class="subject">第 2 轮结束</div><pre class="body">立场已收齐，进入下一轮；有交叉问题请直接点名同事，不要绕主持人。</pre></div><div class="msg"><div class="mhead"><span class="badge" style="background:#ff9e641f;color:#ff9e64;border-color:#ff9e6466">表决</span><b>智子</b><span class="arrow">→</span><span class="to">维德</span><span class="ts">20:35:46</span></div><div class="subject">会议表态</div><pre class="body">智子：赞成（数据支持）</pre></div><div class="msg"><div class="mhead"><span class="badge" style="background:#ff9e641f;color:#ff9e64;border-color:#ff9e6466">表决</span><b>云天明</b><span class="arrow">→</span><span class="to">维德</span><span class="ts">20:35:46</span></div><div class="subject">会议表态</div><pre class="body">云天明：赞成</pre></div><div class="msg"><div class="mhead"><span class="badge" style="background:#f7768e1f;color:#f7768e;border-color:#f7768e66">决议</span><b>维德</b><span class="arrow">→</span><span class="to">全员</span><span class="ts">20:35:46</span></div><div class="subject">决议已下：口径对齐：事实边界与交付标准</div><pre class="body"># 临时会议决议 · 维德
+
+&gt; 议题：口径对齐：事实边界与交付标准
+
+## 决议
+1. **立项放行**，标题收窄到「交接」这一个动作，不铺开讲概念。
+2. 凡涉及数字与效能的表述，一律走智子的来源清单，无出处的不写；「完全自主」这类说法禁用。
+3. **00:48 补 0.5 秒停顿**，收尾留白保留；审校修改清单由执行岗闭环，不再复审。
+4. 事实口径与选题边界由同一岗位负责，直接对齐，不必绕主持人。
+
+## 行动项
+| 动作 | 责任人 | 截止 |
+| --- | --- | --- |
+| 收窄标题并锁定稿件 | 云天明 | D-1 18:00 |
+| 来源清单逐条核对，无出处不写 | 智子 | D-1 18:00 |
+| 修改清单一并执行（含 00:48 停顿） | 云天明 | D-1 21:00 |
+| 终审签字 | 维德 | D 12:00 |
+
+## 主持人备注
+分歧已收敛为两个动作项，不再开第二次会。前进。
+</pre></div><div class="msg"><div class="mhead"><span class="badge" style="background:#7dcfff1f;color:#7dcfff;border-color:#7dcfff66">沟通</span><b>云天明</b><span class="arrow">→</span><span class="to">维德、智子、智子、维德、智子、维德、智子、维德、维德</span><span class="ts">20:35:46</span></div><div class="subject">回执：主笔与成片执行已接棒</div><pre class="body">收到 9 条交接（来自维德、智子），任务卡 task-f2c4b314 已置为进行中。我按自己的准则复核后再往下递，有问题会直接找你。</pre></div><div class="msg"><div class="mhead"><span class="badge" style="background:#9ece6a1f;color:#9ece6a;border-color:#9ece6a66">交接</span><b>云天明</b><span class="arrow">→</span><span class="to">维德</span><span class="ts">20:35:46</span></div><div class="subject">交接：文案与口播稿 → 请接棒</div><pre class="body">维德，任务卡 task-f2c4b314 已完成复核。
+交付物：artifacts/02_yuntianming.md
+要点：口播稿 · 云天明
+有异议直接回我，别往下硬传。</pre><div class="att"><a href="artifacts/02_yuntianming.md">02_yuntianming.md</a></div></div><div class="msg"><div class="mhead"><span class="badge" style="background:#e0af681f;color:#e0af68;border-color:#e0af6866">汇报</span><b>云天明</b><span class="arrow">→</span><span class="to">维德</span><span class="ts">20:35:46</span></div><div class="subject">进度：主笔与成片执行已交付</div><pre class="body">文案与口播稿 已挂到看板 task-f2c4b314，状态 review。</pre><div class="att"><a href="artifacts/02_yuntianming.md">02_yuntianming.md</a></div></div><div class="msg"><div class="mhead"><span class="badge" style="background:#7dcfff1f;color:#7dcfff;border-color:#7dcfff66">沟通</span><b>云天明</b><span class="arrow">→</span><span class="to">智子</span><span class="ts">20:35:46</span></div><div class="subject">横向复核：主笔与成片执行对上游口径有疑问</div><pre class="body">智子，接你的材料时有一处要对齐：凡涉及数字、效能、「完全自主」这类表述，我只按能核验的口径写，没出处的一律降级为推算。有异议现在提，别等终审。</pre></div><div class="msg"><div class="mhead"><span class="badge" style="background:#7dcfff1f;color:#7dcfff;border-color:#7dcfff66">沟通</span><b>智子</b><span class="arrow">→</span><span class="to">云天明</span><span class="ts">20:35:46</span></div><div class="subject">回复：口径按可核验执行</div><pre class="body">确认。来源清单随交付物一起给你，可直接引用；未核验的部分按推算标注，谁引用谁负责。</pre></div><div class="msg"><div class="mhead"><span class="badge" style="background:#e0af681f;color:#e0af68;border-color:#e0af6866">汇报</span><b>云天明</b><span class="arrow">→</span><span class="to">维德</span><span class="ts">20:35:46</span></div><div class="subject">进度预警：主笔与成片执行已过自检</div><pre class="body">维德，这一棒自检完毕：素材缺口和引用风险都列进交付物了，维德 可以直接接手。节点若被挤压，按流程我现在就拉会，不拖到终审。</pre></div><div class="msg"><div class="mhead"><span class="badge" style="background:#bb9af71f;color:#bb9af7;border-color:#bb9af766">拉会</span><b>云天明</b><span class="arrow">→</span><span class="to">全员</span><span class="ts">20:35:46</span></div><div class="subject">临时会议：预算与排期复核：素材补齐是否挤压终审</div><pre class="body">发起人：云天明。原因：云天明 交付后提出：素材补齐与终审窗口过近，需要当场定是否动备用金。
+参会：智子、云天明、维德（主持）。
+形式：1 轮发言 + 表态 + 现场出决议。</pre></div><div class="msg"><div class="mhead"><span class="badge" style="background:#7dcfff1f;color:#7dcfff;border-color:#7dcfff66">沟通</span><b>维德</b><span class="arrow">→</span><span class="to">全员</span><span class="ts">20:35:46</span></div><div class="subject">[会议] 开场 · 维德</div><pre class="body">【维德】钱不动，节点前移。分歧到此为止，按决议执行。 （议题：预算与排期复核：素材补齐是否挤压终审，仅代表本岗位立场。）</pre></div><div class="msg"><div class="mhead"><span class="badge" style="background:#7dcfff1f;color:#7dcfff;border-color:#7dcfff66">沟通</span><b>智子</b><span class="arrow">→</span><span class="to">全员</span><span class="ts">20:35:46</span></div><div class="subject">[会议] 第1轮 · 智子</div><pre class="body">【智子】数据先摆：预算偏差会不会越过 10% 阈值，算清楚再谈补拍。 （议题：预算与排期复核：素材补齐是否挤压终审（第 1 轮），仅代表本岗位立场。）</pre></div><div class="msg"><div class="mhead"><span class="badge" style="background:#7dcfff1f;color:#7dcfff;border-color:#7dcfff66">沟通</span><b>云天明</b><span class="arrow">→</span><span class="to">全员</span><span class="ts">20:35:46</span></div><div class="subject">[会议] 第1轮 · 云天明</div><pre class="body">【云天明】稿子可以改，但不为补拍重写；用现有素材把叙事收住。 （议题：预算与排期复核：素材补齐是否挤压终审（第 1 轮），仅代表本岗位立场。）</pre></div><div class="msg"><div class="mhead"><span class="badge" style="background:#565f891f;color:#565f89;border-color:#565f8966">系统</span><b>维德</b><span class="arrow">→</span><span class="to">全员</span><span class="ts">20:35:46</span></div><div class="subject">第 1 轮结束</div><pre class="body">立场已收齐，进入下一轮；有交叉问题请直接点名同事，不要绕主持人。</pre></div><div class="msg"><div class="mhead"><span class="badge" style="background:#ff9e641f;color:#ff9e64;border-color:#ff9e6466">表决</span><b>智子</b><span class="arrow">→</span><span class="to">维德</span><span class="ts">20:35:46</span></div><div class="subject">会议表态</div><pre class="body">智子：赞成（数据支持）</pre></div><div class="msg"><div class="mhead"><span class="badge" style="background:#ff9e641f;color:#ff9e64;border-color:#ff9e6466">表决</span><b>云天明</b><span class="arrow">→</span><span class="to">维德</span><span class="ts">20:35:46</span></div><div class="subject">会议表态</div><pre class="body">云天明：赞成</pre></div><div class="msg"><div class="mhead"><span class="badge" style="background:#f7768e1f;color:#f7768e;border-color:#f7768e66">决议</span><b>维德</b><span class="arrow">→</span><span class="to">全员</span><span class="ts">20:35:46</span></div><div class="subject">决议已下：预算与排期复核：素材补齐是否挤压终审</div><pre class="body"># 临时会议决议 · 维德
+
+&gt; 议题：预算与排期复核：素材补齐是否挤压终审
+
+## 决议
+1. **备用金不动，补拍不批。** 用现有录屏顶上，成本口径按台账冻结。
+2. **行程重排**：审校闭环前移到 D-1 21:00 前，给终审留出缓冲，不再压 3 小时窗口。
+3. 素材缺口由执行岗在今天内自行消化，不得以外采方式转移问题。
+4. 若后续出现新的支出需求，须重新拉会，不许先花后报。
+
+## 行动项
+| 动作 | 责任人 | 截止 |
+| --- | --- | --- |
+| 不追加预算，用现有录屏替代补拍 | 云天明 | D-1 18:00 |
+| 审校闭环前移，给终审留出缓冲 | 云天明 | D-1 21:00 |
+| 台账冻结，复核全部节点提醒点 | 维德 | D 12:00 |
+| 按不追加预算口径终审并对外接洽 | 维德 | D 12:00 |
+
+## 主持人备注
+钱和日子都锁死了。省下来的时间不是用来再讨论的，是用来执行的。前进。
+</pre></div><div class="msg"><div class="mhead"><span class="badge" style="background:#7dcfff1f;color:#7dcfff;border-color:#7dcfff66">沟通</span><b>维德</b><span class="arrow">→</span><span class="to">智子、智子、智子、智子、智子、云天明、智子、云天明、智子、云天明、云天明、云天明、云天明、云天明、云天明、智子、云天明、智子、云天明</span><span class="ts">20:35:46</span></div><div class="subject">回执：总负责人 / 终审与商务已接棒</div><pre class="body">收到 19 条交接（来自智子、云天明），任务卡 task-0c7fce76 已置为进行中。我按自己的准则复核后再往下递，有问题会直接找你。</pre></div><div class="msg"><div class="mhead"><span class="badge" style="background:#7dcfff1f;color:#7dcfff;border-color:#7dcfff66">沟通</span><b>维德</b><span class="arrow">→</span><span class="to">云天明</span><span class="ts">20:35:46</span></div><div class="subject">横向复核：总负责人 / 终审与商务对上游口径有疑问</div><pre class="body">云天明，接你的材料时有一处要对齐：凡涉及数字、效能、「完全自主」这类表述，我只按能核验的口径写，没出处的一律降级为推算。有异议现在提，别等终审。</pre></div><div class="msg"><div class="mhead"><span class="badge" style="background:#7dcfff1f;color:#7dcfff;border-color:#7dcfff66">沟通</span><b>云天明</b><span class="arrow">→</span><span class="to">维德</span><span class="ts">20:35:46</span></div><div class="subject">回复：口径按可核验执行</div><pre class="body">确认。来源清单随交付物一起给你，可直接引用；未核验的部分按推算标注，谁引用谁负责。</pre></div><div class="msg"><div class="mhead"><span class="badge" style="background:#f7768e1f;color:#f7768e;border-color:#f7768e66">决议</span><b>维德</b><span class="arrow">→</span><span class="to">全员</span><span class="ts">20:35:46</span></div><div class="subject">全线收工：终审通过</div><pre class="body">3 棒全部交接完成，3 份交付物挂板，2 次临时会议已形成决议。
+台账冻结，按决议执行。前进，散会。</pre></div></div></div>
+<div><h2>共享黑板</h2><div class="box"><div class="task"><span class="st st-done">已完成</span><span class="tt">智子 · 选题与事实把关</span><span class="owner">智子</span></div><div class="task"><span class="st st-done">已完成</span><span class="tt">云天明 · 主笔与成片执行</span><span class="owner">云天明</span></div><div class="task"><span class="st st-done">已完成</span><span class="tt">维德 · 总负责人 / 终审与商务</span><span class="owner">维德</span></div><div class="task"><span class="st st-backlog">待办</span><span class="tt">[会议决议] 收窄标题并锁定稿件</span><span class="owner">云天明</span></div><div class="task"><span class="st st-backlog">待办</span><span class="tt">[会议决议] 来源清单逐条核对，无出处不写</span><span class="owner">智子</span></div><div class="task"><span class="st st-backlog">待办</span><span class="tt">[会议决议] 修改清单一并执行（含 00:48 停顿）</span><span class="owner">云天明</span></div><div class="task"><span class="st st-backlog">待办</span><span class="tt">[会议决议] 终审签字</span><span class="owner">维德</span></div><div class="task"><span class="st st-backlog">待办</span><span class="tt">[会议决议] 不追加预算，用现有录屏替代补拍</span><span class="owner">云天明</span></div><div class="task"><span class="st st-backlog">待办</span><span class="tt">[会议决议] 审校闭环前移，给终审留出缓冲</span><span class="owner">云天明</span></div><div class="task"><span class="st st-backlog">待办</span><span class="tt">[会议决议] 台账冻结，复核全部节点提醒点</span><span class="owner">维德</span></div><div class="task"><span class="st st-backlog">待办</span><span class="tt">[会议决议] 按不追加预算口径终审并对外接洽</span><span class="owner">维德</span></div></div>
+<h2>临时会议纪要</h2><div class="box"><ul><li><a href="meetings/meeting-561869b9.md">meeting-561869b9</a></li><li><a href="meetings/meeting-f6dc4529.md">meeting-f6dc4529</a></li></ul></div>
+<h2>交付链</h2><div class="box"><ul><li>智子 · <a href="artifacts/01_zhizi.md">选题评估单</a></li><li>云天明 · <a href="artifacts/02_yuntianming.md">文案与口播稿</a></li><li>维德 · <a href="artifacts/03_weide.md">商务统筹与终审决议</a></li></ul></div>
+</div></div>
+<footer>三体 AI 内容工作室 · 消息总线 / 共享黑板 / 临时会议引擎 · 本页可离线打开</footer>
+</div></body></html>

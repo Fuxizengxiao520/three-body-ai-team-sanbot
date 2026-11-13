@@ -1,0 +1,443 @@
+{
+  "updated_at": "2026-11-13T19:20:09+08:00",
+  "tasks": [
+    {
+      "title": "智子 · 选题筛评官",
+      "description": "做一期 90 秒短视频：AI 智能体从工具变成同事，讲清楚多智能体协作怎么落地",
+      "owner": "zhizi",
+      "id": "task-b7912f34",
+      "status": "done",
+      "stage": "zhizi",
+      "created_at": "2026-11-13T19:20:09+08:00",
+      "updated_at": "2026-11-13T19:20:09+08:00",
+      "upstream": [],
+      "downstream": [
+        "luoji"
+      ],
+      "artifacts": [
+        "artifacts/01_zhizi.md"
+      ],
+      "notes": [
+        "[2026-11-13T19:20:09+08:00] 智子 交付 选题评估单"
+      ],
+      "budget_cny": 0.0,
+      "due": ""
+    },
+    {
+      "title": "罗辑 · 前沿资讯与事实核验官",
+      "description": "做一期 90 秒短视频：AI 智能体从工具变成同事，讲清楚多智能体协作怎么落地",
+      "owner": "luoji",
+      "id": "task-91b99f12",
+      "status": "done",
+      "stage": "luoji",
+      "created_at": "2026-11-13T19:20:09+08:00",
+      "updated_at": "2026-11-13T19:20:09+08:00",
+      "upstream": [
+        "zhizi"
+      ],
+      "downstream": [
+        "yuntianming"
+      ],
+      "artifacts": [
+        "artifacts/02_luoji.md"
+      ],
+      "notes": [
+        "[2026-11-13T19:20:09+08:00] 罗辑 交付 前沿资讯核验包"
+      ],
+      "budget_cny": 0.0,
+      "due": ""
+    },
+    {
+      "title": "云天明 · 主笔 / 文案",
+      "description": "做一期 90 秒短视频：AI 智能体从工具变成同事，讲清楚多智能体协作怎么落地",
+      "owner": "yuntianming",
+      "id": "task-ea20b297",
+      "status": "done",
+      "stage": "yuntianming",
+      "created_at": "2026-11-13T19:20:09+08:00",
+      "updated_at": "2026-11-13T19:20:09+08:00",
+      "upstream": [
+        "luoji"
+      ],
+      "downstream": [
+        "zhangbeihai"
+      ],
+      "artifacts": [
+        "artifacts/03_yuntianming.md"
+      ],
+      "notes": [
+        "[2026-11-13T19:20:09+08:00] 云天明 交付 文案与口播稿"
+      ],
+      "budget_cny": 0.0,
+      "due": ""
+    },
+    {
+      "title": "章北海 · 剪辑执行 / 粗剪与节奏",
+      "description": "做一期 90 秒短视频：AI 智能体从工具变成同事，讲清楚多智能体协作怎么落地",
+      "owner": "zhangbeihai",
+      "id": "task-3eaf315f",
+      "status": "done",
+      "stage": "zhangbeihai",
+      "created_at": "2026-11-13T19:20:09+08:00",
+      "updated_at": "2026-11-13T19:20:09+08:00",
+      "upstream": [
+        "yuntianming"
+      ],
+      "downstream": [
+        "chengxin"
+      ],
+      "artifacts": [
+        "artifacts/04_zhangbeihai.md"
+      ],
+      "notes": [
+        "[2026-11-13T19:20:09+08:00] 章北海 交付 分镜与剪辑清单"
+      ],
+      "budget_cny": 0.0,
+      "due": ""
+    },
+    {
+      "title": "程心 · 剪辑审校 / 情绪与合规",
+      "description": "做一期 90 秒短视频：AI 智能体从工具变成同事，讲清楚多智能体协作怎么落地",
+      "owner": "chengxin",
+      "id": "task-025bf46a",
+      "status": "done",
+      "stage": "chengxin",
+      "created_at": "2026-11-13T19:20:09+08:00",
+      "updated_at": "2026-11-13T19:20:09+08:00",
+      "upstream": [
+        "zhangbeihai"
+      ],
+      "downstream": [
+        "zhuangyan"
+      ],
+      "artifacts": [
+        "artifacts/05_chengxin.md"
+      ],
+      "notes": [
+        "[2026-11-13T19:20:09+08:00] 程心 交付 审校与合规意见"
+      ],
+      "budget_cny": 0.0,
+      "due": ""
+    },
+    {
+      "title": "庄颜 · 账单与行程管家",
+      "description": "做一期 90 秒短视频：AI 智能体从工具变成同事，讲清楚多智能体协作怎么落地",
+      "owner": "zhuangyan",
+      "id": "task-f0e0f56c",
+      "status": "done",
+      "stage": "zhuangyan",
+      "created_at": "2026-11-13T19:20:09+08:00",
+      "updated_at": "2026-11-13T19:20:09+08:00",
+      "upstream": [
+        "chengxin"
+      ],
+      "downstream": [
+        "weide"
+      ],
+      "artifacts": [
+        "artifacts/06_zhuangyan.md"
+      ],
+      "notes": [
+        "[2026-11-13T19:20:09+08:00] 庄颜 交付 账单与行程台账"
+      ],
+      "budget_cny": 0.0,
+      "due": ""
+    },
+    {
+      "title": "维德 · 总负责人 / 商务合作与统筹",
+      "description": "做一期 90 秒短视频：AI 智能体从工具变成同事，讲清楚多智能体协作怎么落地",
+      "owner": "weide",
+      "id": "task-ee85a9cd",
+      "status": "done",
+      "stage": "weide",
+      "created_at": "2026-11-13T19:20:09+08:00",
+      "updated_at": "2026-11-13T19:20:09+08:00",
+      "upstream": [
+        "zhuangyan"
+      ],
+      "downstream": [],
+      "artifacts": [
+        "artifacts/07_weide.md"
+      ],
+      "notes": [
+        "[2026-11-13T19:20:09+08:00] 维德 交付 商务统筹与终审决议"
+      ],
+      "budget_cny": 0.0,
+      "due": ""
+    },
+    {
+      "title": "[会议决议] 收窄标题并锁定稿件",
+      "description": "来源会议 meeting-85dee64f：立项对齐：标题边界与素材口径",
+      "owner": "yuntianming",
+      "id": "task-9c2b99bb",
+      "status": "backlog",
+      "stage": "meeting_action",
+      "created_at": "2026-11-13T19:20:09+08:00",
+      "updated_at": "2026-11-13T19:20:09+08:00",
+      "upstream": [],
+      "downstream": [],
+      "artifacts": [],
+      "notes": [],
+      "budget_cny": 0.0,
+      "due": "D-1 18:00"
+    },
+    {
+      "title": "[会议决议] 来源清单逐条核对，无出处不写",
+      "description": "来源会议 meeting-85dee64f：立项对齐：标题边界与素材口径",
+      "owner": "luoji",
+      "id": "task-610ac065",
+      "status": "backlog",
+      "stage": "meeting_action",
+      "created_at": "2026-11-13T19:20:09+08:00",
+      "updated_at": "2026-11-13T19:20:09+08:00",
+      "upstream": [],
+      "downstream": [],
+      "artifacts": [],
+      "notes": [],
+      "budget_cny": 0.0,
+      "due": "D-1 18:00"
+    },
+    {
+      "title": "[会议决议] 修改清单一并执行（含 00:48 停顿）",
+      "description": "来源会议 meeting-85dee64f：立项对齐：标题边界与素材口径",
+      "owner": "zhangbeihai",
+      "id": "task-0be75576",
+      "status": "backlog",
+      "stage": "meeting_action",
+      "created_at": "2026-11-13T19:20:09+08:00",
+      "updated_at": "2026-11-13T19:20:09+08:00",
+      "upstream": [],
+      "downstream": [],
+      "artifacts": [],
+      "notes": [],
+      "budget_cny": 0.0,
+      "due": "D-1 21:00"
+    },
+    {
+      "title": "[会议决议] 终审签字",
+      "description": "来源会议 meeting-85dee64f：立项对齐：标题边界与素材口径",
+      "owner": "weide",
+      "id": "task-91697e5c",
+      "status": "backlog",
+      "stage": "meeting_action",
+      "created_at": "2026-11-13T19:20:09+08:00",
+      "updated_at": "2026-11-13T19:20:09+08:00",
+      "upstream": [],
+      "downstream": [],
+      "artifacts": [],
+      "notes": [],
+      "budget_cny": 0.0,
+      "due": "D 12:00"
+    },
+    {
+      "title": "[会议决议] 不追加预算，用现有录屏替代补拍",
+      "description": "来源会议 meeting-898f1710：预算与排期复核：素材补齐是否挤压终审",
+      "owner": "zhangbeihai",
+      "id": "task-8a1a959e",
+      "status": "backlog",
+      "stage": "meeting_action",
+      "created_at": "2026-11-13T19:20:09+08:00",
+      "updated_at": "2026-11-13T19:20:09+08:00",
+      "upstream": [],
+      "downstream": [],
+      "artifacts": [],
+      "notes": [],
+      "budget_cny": 0.0,
+      "due": "D-1 18:00"
+    },
+    {
+      "title": "[会议决议] 审校闭环前移，给终审留出缓冲",
+      "description": "来源会议 meeting-898f1710：预算与排期复核：素材补齐是否挤压终审",
+      "owner": "chengxin",
+      "id": "task-399aa114",
+      "status": "backlog",
+      "stage": "meeting_action",
+      "created_at": "2026-11-13T19:20:09+08:00",
+      "updated_at": "2026-11-13T19:20:09+08:00",
+      "upstream": [],
+      "downstream": [],
+      "artifacts": [],
+      "notes": [],
+      "budget_cny": 0.0,
+      "due": "D-1 21:00"
+    },
+    {
+      "title": "[会议决议] 台账冻结，复核全部节点提醒点",
+      "description": "来源会议 meeting-898f1710：预算与排期复核：素材补齐是否挤压终审",
+      "owner": "zhuangyan",
+      "id": "task-76da877d",
+      "status": "backlog",
+      "stage": "meeting_action",
+      "created_at": "2026-11-13T19:20:09+08:00",
+      "updated_at": "2026-11-13T19:20:09+08:00",
+      "upstream": [],
+      "downstream": [],
+      "artifacts": [],
+      "notes": [],
+      "budget_cny": 0.0,
+      "due": "D 12:00"
+    },
+    {
+      "title": "[会议决议] 按不追加预算口径终审并对外接洽",
+      "description": "来源会议 meeting-898f1710：预算与排期复核：素材补齐是否挤压终审",
+      "owner": "weide",
+      "id": "task-70eb85dd",
+      "status": "backlog",
+      "stage": "meeting_action",
+      "created_at": "2026-11-13T19:20:09+08:00",
+      "updated_at": "2026-11-13T19:20:09+08:00",
+      "upstream": [],
+      "downstream": [],
+      "artifacts": [],
+      "notes": [],
+      "budget_cny": 0.0,
+      "due": "D 12:00"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "art-af9d0da1",
+      "title": "选题评估单",
+      "path": "artifacts/01_zhizi.md",
+      "producer": "zhizi",
+      "task_id": "task-b7912f34",
+      "summary": "选题评估单 · 智子",
+      "version": 1,
+      "ts": "2026-11-13T19:20:09+08:00"
+    },
+    {
+      "id": "art-ad62d7b9",
+      "title": "前沿资讯核验包",
+      "path": "artifacts/02_luoji.md",
+      "producer": "luoji",
+      "task_id": "task-91b99f12",
+      "summary": "前沿资讯核验包 · 罗辑",
+      "version": 1,
+      "ts": "2026-11-13T19:20:09+08:00"
+    },
+    {
+      "id": "art-3be5b557",
+      "title": "文案与口播稿",
+      "path": "artifacts/03_yuntianming.md",
+      "producer": "yuntianming",
+      "task_id": "task-ea20b297",
+      "summary": "口播稿 · 云天明",
+      "version": 1,
+      "ts": "2026-11-13T19:20:09+08:00"
+    },
+    {
+      "id": "art-9f84720a",
+      "title": "分镜与剪辑清单",
+      "path": "artifacts/04_zhangbeihai.md",
+      "producer": "zhangbeihai",
+      "task_id": "task-3eaf315f",
+      "summary": "分镜与剪辑清单 · 章北海",
+      "version": 1,
+      "ts": "2026-11-13T19:20:09+08:00"
+    },
+    {
+      "id": "art-69fdb9c0",
+      "title": "审校与合规意见",
+      "path": "artifacts/05_chengxin.md",
+      "producer": "chengxin",
+      "task_id": "task-025bf46a",
+      "summary": "审校与合规意见 · 程心",
+      "version": 1,
+      "ts": "2026-11-13T19:20:09+08:00"
+    },
+    {
+      "id": "art-b71ae618",
+      "title": "账单与行程台账",
+      "path": "artifacts/06_zhuangyan.md",
+      "producer": "zhuangyan",
+      "task_id": "task-f0e0f56c",
+      "summary": "账单与行程台账 · 庄颜",
+      "version": 1,
+      "ts": "2026-11-13T19:20:09+08:00"
+    },
+    {
+      "id": "art-ba922de5",
+      "title": "商务统筹与终审决议",
+      "path": "artifacts/07_weide.md",
+      "producer": "weide",
+      "task_id": "task-ee85a9cd",
+      "summary": "商务统筹与终审决议 · 维德",
+      "version": 1,
+      "ts": "2026-11-13T19:20:09+08:00"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "dec-deff7753",
+      "meeting_id": "meeting-85dee64f",
+      "topic": "立项对齐：标题边界与素材口径",
+      "votes": {
+        "zhizi": "赞成（数据支持）",
+        "luoji": "赞成（附条件：数字须核验）",
+        "yuntianming": "赞成",
+        "zhangbeihai": "赞成（按节点执行）",
+        "chengxin": "附条件赞成（守住情绪与合规）",
+        "zhuangyan": "附条件赞成（预算不追加）"
+      },
+      "action_items": [
+        {
+          "action": "收窄标题并锁定稿件",
+          "owner": "yuntianming",
+          "due": "D-1 18:00"
+        },
+        {
+          "action": "来源清单逐条核对，无出处不写",
+          "owner": "luoji",
+          "due": "D-1 18:00"
+        },
+        {
+          "action": "修改清单一并执行（含 00:48 停顿）",
+          "owner": "zhangbeihai",
+          "due": "D-1 21:00"
+        },
+        {
+          "action": "终审签字",
+          "owner": "weide",
+          "due": "D 12:00"
+        }
+      ],
+      "ts": "2026-11-13T19:20:09+08:00"
+    },
+    {
+      "id": "dec-62dcc4ac",
+      "meeting_id": "meeting-898f1710",
+      "topic": "预算与排期复核：素材补齐是否挤压终审",
+      "votes": {
+        "zhizi": "赞成（数据支持）",
+        "luoji": "赞成（附条件：数字须核验）",
+        "yuntianming": "赞成",
+        "zhangbeihai": "赞成（按节点执行）",
+        "chengxin": "附条件赞成（守住情绪与合规）",
+        "zhuangyan": "附条件赞成（预算不追加）"
+      },
+      "action_items": [
+        {
+          "action": "不追加预算，用现有录屏替代补拍",
+          "owner": "zhangbeihai",
+          "due": "D-1 18:00"
+        },
+        {
+          "action": "审校闭环前移，给终审留出缓冲",
+          "owner": "chengxin",
+          "due": "D-1 21:00"
+        },
+        {
+          "action": "台账冻结，复核全部节点提醒点",
+          "owner": "zhuangyan",
+          "due": "D 12:00"
+        },
+        {
+          "action": "按不追加预算口径终审并对外接洽",
+          "owner": "weide",
+          "due": "D 12:00"
+        }
+      ],
+      "ts": "2026-11-13T19:20:09+08:00"
+    }
+  ]
+}

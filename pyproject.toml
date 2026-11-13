@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "three-body-ai-team"
+version = "1.0.0"
+description = "三体 AI 内容工作室：Grok 驱动的七角色多智能体协作引擎（消息总线 / 共享黑板 / 临时会议）"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+license = { text = "MIT" }
+
+[project.scripts]
+sanbot = "sanbot.__main__:main"
+
+[tool.setuptools]
+packages = ["sanbot"]

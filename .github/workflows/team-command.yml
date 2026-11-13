@@ -1,0 +1,47 @@
+name: Team Command
+
+on:
+  issues:
+    types: [opened, edited]
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  dispatch:
+    if: >-
+      (github.event_name == 'issues' && contains(github.event.issue.body, '/team ')) ||
+      (github.event_name == 'issue_comment' && contains(github.event.comment.body, '/team '))
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 执行团队命令并回帖
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          TEAM_COMMAND: ${{ github.event_name == 'issue_comment' && github.event.comment.body || github.event.issue.body }}
+          TEAM_PRESET: ${{ vars.TEAM_PRESET || 'trio' }}
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
+        run: |
+          python -m sanbot issue \
+            --repo "$GITHUB_REPOSITORY" \
+            --number "${{ github.event.issue.number }}" \
+            --command "$TEAM_COMMAND" \
+            --team "$TEAM_PRESET" \
+            --run-root runs
+
+      - name: 上传本次协作记录
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: team-run-${{ github.event.issue.number }}
+          path: runs/
+          if-no-files-found: ignore

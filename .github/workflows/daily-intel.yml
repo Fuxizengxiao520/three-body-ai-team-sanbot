@@ -1,0 +1,37 @@
+name: Daily Intel
+
+on:
+  schedule:
+    - cron: '0 1 * * *'   # 北京时间 09:00
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  intel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 抓前沿资讯并开简报 Issue
+        env:
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          if [ -z "$XAI_API_KEY" ]; then
+            echo "未配置 XAI_API_KEY，跳过本次情报任务（不生成空简报）"
+            exit 0
+          fi
+          python -m sanbot intel --grok > brief.md
+          gh label create "team:intel" --force >/dev/null 2>&1 || true
+          gh issue create \
+            --title "[前沿情报] $(date +%F) 前沿资讯简报" \
+            --body-file brief.md \
+            --label "team:intel"
